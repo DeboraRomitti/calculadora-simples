@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="display" class="display" disabled>
+        <p id="mensagem" class="mensagem"></p>
+        <div class="botoes">
+            <button class="limpar" onclick="limparDisplay()">C</button>
+            <button class="operador" onclick="limiteCaractereres('/')">/</button>
+            <button class="operador" onclick="limiteCaractereres('*')">*</button>
+            <button class="operador" onclick="limiteCaractereres('-')">-</button>
+
+            <button class="numero" onclick="limiteCaractereres('7')">7</button>
+            <button class="numero" onclick="limiteCaractereres('8')">8</button>
+            <button class="numero" onclick="limiteCaractereres('9')">9</button>
+            <button class="operador" onclick="limiteCaractereres('+')">+</button>
+
+            <button class="numero" onclick="limiteCaractereres('4')">4</button>
+            <button class="numero" onclick="limiteCaractereres('5')">5</button>
+            <button class="numero" onclick="limiteCaractereres('6')">6</button>
+            <button class="igual" onclick="calcularResultado()">=</button>
+
+            <button class="numero" onclick="limiteCaractereres('1')">1</button>
+            <button class="numero" onclick="limiteCaractereres('2')">2</button>
+            <button class="numero" onclick="limiteCaractereres('3')">3</button>
+            <button class="numero zero" onclick="limiteCaractereres('0')">0</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
